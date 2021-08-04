@@ -1,260 +1,213 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+
 *{
-    margin:0;
-    padding: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
-
-
 :root{
-    --primary-color:hsl(300, 43%, 22%);    /* very dark magenta*//*this is for the subcard bg*/
-    --secondary-color:hsl(333, 80%, 67%);  /* soft pink */
-    --font-family: 'Spartan', sans-serif;
-    --text-color:hsl(300, 43%, 22%) ; /*for heading*/
-    --text2-color:hsl(303, 10%, 53%);
-    --light-magenta:hsl(300,24%,96%);
-    --card-color: hsl(0, 0%, 100%); 
+    --tile-color:hsl(300, 43%, 22%);
+    --secondary-color: hsl(333, 80%, 67%);
+    --heading-color:hsl(303, 10%, 53%);
+    --info-color: hsl(300, 24%, 96%);
+    --normal-text-color: hsl(0, 0%, 100%);
+    --font-family:'Spartan', sans-serif;
+    --font-size:15px;
 }
 
 body{
-    background-color:var(--light-magenta) ;
+    
+    background:#eaeaea;
     font-family: var(--font-family);
-    font-size: 15px;
+    font-size: var(--font-size);
+
 }
 main{
-    width: 98rem;
+    background: white;  
+    margin: 0 auto;
+    width: 30rem;
+    height: 105rem;
+    border-radius: .7rem;
 }
-
 .content-wrapper{
+    margin-top: 2rem;
     
-    background: var(--card-color) ;
-    border:1px solid black;
-    border-radius: .5rem;
-    
-    height: 40rem;
-    margin: 10rem  15rem ;
-    width: auto;
+    box-shadow: 0 0 10px;
 }
-
-h1{ 
-    padding:4.5rem 41rem 2.5rem 2.5rem ;
-    color:var(--text-color);
+/* heading  */
+h1{
+    padding:2rem 5rem;
+    color:var(--tile-color);
     font-weight: 700;
 }
-
+/* info para  */
 .info{
-    margin-top: -1.5rem;
-    padding-left:2.5rem;
-    padding-right:35rem;
-    font-weight:400;;
-}
-#first{
-    position: absolute;
-    margin-left:-9rem;
-}
-.first{
-    border: 1px solid #F1EEEE ;
-    background:#F1EEEE;
-    border-radius: .5rem;
-   
-    width: 26rem;
-    margin-top:-8rem;
-    margin-left: 35rem;
+    color:var(--heading-color);
+    font-weight: 400;
+    padding-left:  5rem;
+    padding-right: 6rem;
+    margin-top: -1.2rem;
 }
 
-.image{
-    padding-left:1rem;
-    padding-top: .5rem;
+/* rating section */
 
-}
-h3{
-   margin-top:-1.5rem;
-   padding:.1rem 0rem .2rem 8rem;
- }
-.second{
-    border: 1px solid #F1EEEE ;
-    background:#F1EEEE;
-    border-radius: .5rem;
-   
-    width: 26rem;
-    margin-top:1rem;
-    margin-left: 37rem;
-
-}
-.third{
-    border: 1px solid #F1EEEE ;
-    background:#F1EEEE;
-    border-radius: .5rem;
-    width: 26rem;
-    margin-top:1rem;
-    margin-left: 39rem;
-
-}
-.first-element{
-    position: absolute;    
-    background: #6F006F;
-    border-radius: 40px;
-    width: 20rem;
-    height: 14.4rem;
+.first, .second, .third{
+    padding-top: 1rem;
+    margin-top:2rem ;
+    padding-left:2.5rem ;
+    background: #F1EEEE;
+    width: 24rem;
+    height: 6.5rem;
+    border-radius: 5px;
     margin-left: 2.5rem;
-    top:29rem;
+    color: var(--tile-color);   
 }
-.user{
+.image> img{
+    padding: 0rem 1.2rem;
+}
+.first>h2, .second>h2, .third>h2{
+    padding: .5rem 1.2rem .5rem .2rem;
+}
+
+
+
+/* customer review section */
+
+.first-element, .second-element, .third-element{
+    margin: 2rem 3rem;
+    background-color: var(--tile-color);
+    width: 24rem;
+    border-radius: 5px;
+}
+
+.first-element> img , .second-element>img, .third-element>img{
+    padding: 1.5rem 9rem;
     border-radius: 100%;
 }
-.pic1 ,.pic2, .pic3{
-    margin:.8rem 1rem
-}
-h2{
-    margin-top: -4.5rem;
-    padding-left:8rem ;
-    color: var(--card-color);
+.first-element>h2, .second-element>h2, .third-element>h2{
+    color: var(--normal-text-color);
+    margin-top: -2rem;
+    padding:.8rem 7rem .5rem 7rem;
     font-weight: 500;
 }
 .first-element>h3, .second-element>h3, .third-element>h3{
-    margin-top: .1rem;
     color: var(--secondary-color);
-    font-weight: 400;
+    margin-top:-.5rem ;
+    padding: .2rem 7.5rem  .2rem 7.5rem;
+    font-weight: 500;
 }
 .first-element>p, .second-element>p, .third-element>p{
-    margin-top: .5rem;
-    padding: 1rem 1rem;
-    color:var(--card-color);
     font-weight: 400;
-}
-.second-element{
-    position: absolute;    
-    background: #6F006F;
-    border-radius: 40px;
-    width: 20rem;
-    height: 14.4rem;
-    top:31rem;
-    left:38.5rem;
-}
-.pic2{
-    margin:.8rem 1rem
-}
-.third-element{
-    position: absolute;    
-    background: #6F006F;
-    border-radius: 40px;
-    width: 20.5rem;
-    height: 14.4rem;
-    top:33rem;
-    left:59.5rem;
+    color: var(--normal-text-color);
+    padding: 1rem 3rem 1rem 4rem;
+
 }
 
-@media  only screen and (min-width:375px) and (max-width:768px) {
+
+/* media query for desktop view */
+
+@media only screen and (min-width:1080px) and (max-width:1920px) {
+    body{
+        height: 50rem;
+        background: #eaeaea;
+    }
     main{
-       width: 55rem;
+        height: 45rem;
+        width:83rem;
+        margin: 0 auto;
+        
+        border-radius: 1rem;
     }
     .content-wrapper{
-        height: 110rem;
-        background: var(--card-color) ;
-        border:1px solid black;
-        border-radius: .5rem;
-        
-        margin: 10rem  15rem ;
-        width: auto;
+        margin-top: 2rem;
+        height: 45rem;
+        box-shadow: 0 0 10px;
     }
-   
-    h1{ 
-        padding:2rem 3rem 0rem 5rem ; 
-        color:var(--text-color);
-        font-weight: 700;
-    }
-    .info{
-        margin-top:-1rem;
-        padding:2rem 4rem 0rem 5rem ; 
-        font-weight:400;;
-    }
-    #first{
-        position: absolute;
-       
-    }
-    .first, .second, .third{
-        border: 1px solid #F1EEEE ;
-        background:#F1EEEE;
-        border-radius: .5rem;
-        padding:1rem;
-        width: 15rem;
-        margin-top:1rem;
-        height: 7rem;
-        margin-left: 5rem;
-    }
-    
-    .image{
-        margin-top: -1rem;
-        
-    
-    }
-    .image >img {
-        padding-left: .5rem;
-        padding-right: .5rem;
-    }
-    h3{
-       margin-top:.8rem;
-       color:var(--text-color);
-       padding:.1rem .5rem .2rem 1.8rem;
-     }
-    
-    .first-element{
-        position: absolute;    
-        background: #6F006F;
-        border-radius: 40px;
-        width: 15rem;
-        height: 20.4rem;
-        margin-left: 5.5rem;
-        top:52rem;
-    }
-    .user{
-        border-radius: 100%;
-    }
-    .pic1 ,.pic2, .pic3{
-        margin:.8rem 4.5rem;
-    }
-    h2{
-        margin-top: -.5rem;
-        padding-left:2rem ;
-        color: var(--card-color);
-        font-weight: 500;
-    }
-    .first-element>h3, .second-element>h3, .third-element>h3{
-        margin-top: .1rem;
-        padding-left: 3rem;
-        color: var(--secondary-color);
-        font-weight: 400;
-    }
-    .first-element>p, .second-element>p, .third-element>p{
-        margin-top: .1rem;
-        padding: 1rem 2rem;
-        color:var(--card-color);
-        font-weight: 400;
-    }
-    .second-element{
-        position: absolute;    
-        background: #6F006F;
-        border-radius: 40px;
-        width: 15rem;
-        height: 20.4rem;
-        left:15rem;
-        margin-left: 5.5rem;
-        top:74rem;
-    }
-    .third-element{
-        position: absolute;    
-        background: #6F006F;
-        border-radius: 40px;
-        width: 15rem;
-        height: 21.5rem;
-        left:15rem;
-        margin-left: 5.5rem;
-        top:96rem;
+    h1{
+        padding-right: 58rem;
+        padding-top: 4rem;
 
     }
-  
+    .info{
+        padding-right: 45rem;
+    }
+    .rating{
+        position: absolute;
+        top:3.5rem;
+        left:45rem;
     
-    
+      
+    }
+
+   
+    .first, .second, .third{
+        padding:.5rem;
+        padding-left: 1.2rem;
+        width: 28.8rem;
+        padding-right: .2rem;
+        height: 3rem;
+    }
+    .first>h2, .second>h2, .third>h2{
+        margin-top: -2.8rem;
+        margin-left: 5rem;
+        padding: .4rem 2rem ;
+        font-weight: 500;
+    }
+    .second, .third{
+        width: 32rem;
+    }
+    .second{
+        margin-top: .8rem;
+        margin-left: 5.5rem;
+    }
+    .third{
+        margin-top:.8rem ;
+        margin-left: 8.5rem;
+    }
+    .image > img{
+        padding:.5rem 0rem 1rem 0rem;
+
+    }
+    .first-element{
+        border-radius: 20px;
+        margin:3rem 0rem 0rem 5rem;
+    }
+    .first-element>img, .second-element>img, .third-element>img{
+        margin-left: -7rem;
+    }
+    .first-element>h2{
+        margin-top: -6rem;
+        margin-left: .6rem;
+    }
+    .first-element>h3 {
+        margin-left: 0.5rem;
+    }
+    .first-element>p, .second-element>p, .third-element>p{
+        padding-left: 2rem;
+    }
+    .second-element{
+        border-radius: 20px;
+        margin-left: 30rem;
+        margin-top: -10rem;
+    }
+    .second-element>h2, .third-element>h2{
+        margin-top: -6rem;
+        padding-left: 8rem;
+        padding-right: .2rem;
+    }
+    .second-element>h3, .third-element>h3{
+        margin-top: -.4rem;
+        padding-left:8.5rem;
+        padding-right:.2rem;
+    }
+    /* .second-element>p, .third-element>p{} */
+    .third-element{
+        border-radius: 20px;
+        margin-left: 55rem;
+        margin-top: -10rem;
+    }
+
+
 }
